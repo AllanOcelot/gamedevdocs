@@ -1,0 +1,23 @@
+// Fonts 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&display=swap');
+
+
+
+// Colour variables
+  $color_gray: #424B54;
+  $color_dark: #161825;
+  $color_dark_hover: #26293c;
+
+
+
+// Transitions 
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
