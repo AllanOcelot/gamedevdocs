@@ -48,7 +48,7 @@ export default {
     setInterval(function () {
       console.log('xx')
       self.posts++
-    }, 2000)
+    }, 10000)
   }
 }
 </script>

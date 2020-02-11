@@ -4,13 +4,13 @@
         <nav class="main-nav">
           <ol>
             <li>
-              <span class="icon"><fa :icon="['fa', 'envelope']" /></span>
+              <span class="icon"><font-awesome-icon :icon="['fa', 'envelope']" /></span>
             </li>
             <li>
-              <span class="icon"><fa :icon="['fa', 'bell']" /></span>
+              <span class="icon"><font-awesome-icon :icon="['fa', 'bell']" /></span>
             </li>
             <li>
-              <span class="icon"><fa :icon="['fa', 'sign-in-alt']" /></span>
+              <span class="icon"><font-awesome-icon :icon="['fa', 'sign-in-alt']" /></span>
             </li>
           </ol>
         </nav>

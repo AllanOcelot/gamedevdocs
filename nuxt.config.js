@@ -45,11 +45,14 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
     ['nuxt-fontawesome', {
-      component: 'fa',
       imports: [
         {
           set: '@fortawesome/free-solid-svg-icons',
           icons: ['faSearch', 'faEnvelope', 'faBell', 'faSignInAlt']
+        },
+        {
+          set:'@fortawesome/free-brands-svg-icons',
+          icons: ['fab']
         }
       ]
     }]
