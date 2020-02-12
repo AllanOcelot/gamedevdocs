@@ -4,6 +4,53 @@
             <input type="text" placeholder="Search">
             <span class="icon"><font-awesome-icon :icon="['fas', 'search']" /></span>
         </div>
+
+        <div class="filter-list-container">
+            <ul>
+                <li class="active">
+                    <a href="">
+                        <span>
+                            <font-awesome-icon :icon="['fa', 'fire']"  />
+                        </span>
+                        Popular
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>
+                            <font-awesome-icon :icon="['fa', 'globe-europe']"  />
+                        </span>
+                        Latest
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        example
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        example
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        example
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        example
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        example
+                    </a>
+                </li>
+            </ul>
+        </div>
+
         <div class="link-collection">
             <a href="" class="non-icon">About</a>
             <a href="" class="non-icon">News</a>
@@ -57,6 +104,7 @@ export default {
 
         .search-container {
             width: 100%;
+            height: 50px;
             position: relative;
             input {
                 height: 50px;
@@ -85,6 +133,52 @@ export default {
                 top: 0;
                 font-size: 1.2em;
                 line-height: 50px;
+            }
+        }
+
+        .filter-list-container {
+            display: flex;
+            flex: 1;
+            min-height: 100px;
+//            justify-content: center;
+
+            ul {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                li {
+                    width: 100%;
+                    padding:0;
+                    a {
+                        text-decoration: none;
+                        font-size: 1.2em;
+                        padding: 20px 10px;
+                        width: 100%;
+                        display: block;
+                        color: #fff;
+                        opacity: 0.8;
+                        transition: all 0.3s;
+                        &:hover,
+                        &.active {
+                            background: #f1f1f1;
+                            opacity: 1;
+                        }
+
+                        span {
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    &.active {
+                        a {
+                            background: #f1f1f1;
+                            color: $color_dark;
+                            opacity: 1;
+                        }
+                    }
+                }
             }
         }
 
